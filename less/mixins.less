@@ -1,1 +1,23 @@
 // Mixins Here
+.flex-mixin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: top;
+}
+
+.ebonyclay-nodec {
+    text-decoration: none;
+    color: @ebony-clay;
+}
+
+.btn-class (@borderradius, @border, @fontsize, @background, @color, @width, @height, @cursor){
+    border-radius: @borderradius;
+    border: @border;
+    font-size: @fontsize;
+    background: @background;
+    color: @color;
+    width: @width;
+    height: @height;
+    cursor: @cursor;
+}

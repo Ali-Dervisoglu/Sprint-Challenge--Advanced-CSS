@@ -1,3 +1,13 @@
+.flex-mixin {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: top;
+}
+.ebonyclay-nodec {
+  text-decoration: none;
+  color: #23293B;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +170,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: top;
+  width: 40%;
+  margin-left: 30%;
+}
+nav a {
+  text-decoration: none;
+  color: #23293B;
+  margin-left: 20px;
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.headnav {
+  background-color: #F6F6F6;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -211,6 +243,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border-radius: 12px;
+  border: 1px double teal;
+  font-size: 20px;
+  background: #22283A;
+  color: white;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 2;
 }
 .home .walk .walk-img {
   width: 46%;
