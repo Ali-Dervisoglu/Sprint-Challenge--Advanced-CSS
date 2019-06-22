@@ -4,6 +4,12 @@
 
   .intro {
 
+    @media @phone {
+      .main-header {
+        width:100%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -18,6 +24,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    @media @phone {
+      .sky {
+        display:none;
+      }
+
+      .launch {
+        display:none;
+      }
+
+      .blast {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -58,21 +78,56 @@
       }
 
       .btn {
-        .btn-class (12px, 1px double teal, 20px, @btn-bg-color, white, 200px, 40px, pointer);
+        .btn-class (6px, 1px double @btn-bg-color, 15px, @btn-bg-color, white, 100px, 40px, pointer);
         text-align: center;
         line-height: 2;
       }
+
+      @media @phone {
+        .btn {
+          width: 100%;
+          height: 50px;
+          line-height: 2;
+          font-size: 20px;
+        }
+      }
+      
+      .btn:hover{
+        background: rgba(238, 232, 232, 0.842);
+        color: @btn-bg-color;
+      }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+
+    @media @phone{
+        .walk-img{
+          width: 100%;
+          }
+
+          .walk-text {
+            width: 100%;
+        }
+      
+    }
+    
+    
   }
+
+  @media @phone {
+    .walk {
+      flex-direction:column-reverse;
+    }
+  }
+ 
 }// home
