@@ -219,13 +219,13 @@ footer {
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images .sky {
+  .home .space-images .moon {
     display: none;
   }
-  .home .space-images .launch {
+  .home .space-images .shuttle {
     display: none;
   }
-  .home .space-images .blast {
+  .home .space-images .mars {
     width: 100%;
   }
 }
